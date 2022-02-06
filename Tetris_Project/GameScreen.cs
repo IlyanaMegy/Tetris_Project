@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Drawing;
+using System.IO;
 using System.Windows.Forms;
 using Tetris;
 
@@ -20,8 +21,9 @@ namespace Tetris_Project
             timer.Interval = 500;
             timer.Start();
 
-            this.KeyDown += Form1_KeyDown;
+            Highscore_value.Text = Properties.Settings.Default.highscore;
 
+            this.KeyDown += Form1_KeyDown;
         }
 
         private void Form1_KeyDown(object sender, KeyEventArgs e)
@@ -194,9 +196,18 @@ namespace Tetris_Project
         private void checkIfGameOver()
         {
             if (currentY < 0)
-            {
+            {                
                 timer.Stop();
+                int a = Int32.Parse(Highscore_value.Text);
+                if(score>a)
+                {
+                    Highscore_value.Text = score.ToString();
+                    Properties.Settings.Default.highscore = Highscore_value.Text;
+                    Properties.Settings.Default.Save();
+                }
                 MessageBox.Show("Game Over");
+                this.Close();
+               
                 Application.Restart();
             }
         }
@@ -286,12 +297,9 @@ namespace Tetris_Project
             return shape;
         }
 
-
-
         private void GameScreen_Load(object sender, EventArgs e)
         {
 
         }
-        
     }
 }

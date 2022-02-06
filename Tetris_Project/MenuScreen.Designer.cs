@@ -32,7 +32,7 @@
             this.Title = new System.Windows.Forms.Label();
             this.GoToPlay = new System.Windows.Forms.Button();
             this.GoToSettings = new System.Windows.Forms.Button();
-            this.GoToHelps = new System.Windows.Forms.Button();
+            this.ExitGame = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Title
@@ -72,7 +72,7 @@
             this.GoToSettings.Cursor = System.Windows.Forms.Cursors.Hand;
             this.GoToSettings.Font = new System.Drawing.Font("Cooper Black", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.GoToSettings.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.GoToSettings.Location = new System.Drawing.Point(264, 351);
+            this.GoToSettings.Location = new System.Drawing.Point(264, 297);
             this.GoToSettings.Name = "GoToSettings";
             this.GoToSettings.Size = new System.Drawing.Size(132, 39);
             this.GoToSettings.TabIndex = 2;
@@ -80,20 +80,20 @@
             this.GoToSettings.UseVisualStyleBackColor = false;
             this.GoToSettings.Click += new System.EventHandler(this.GoToSettings_Click);
             // 
-            // GoToHelps
+            // ExitGame
             // 
-            this.GoToHelps.AutoSize = true;
-            this.GoToHelps.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.GoToHelps.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.GoToHelps.Font = new System.Drawing.Font("Cooper Black", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GoToHelps.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.GoToHelps.Location = new System.Drawing.Point(264, 296);
-            this.GoToHelps.Name = "GoToHelps";
-            this.GoToHelps.Size = new System.Drawing.Size(132, 39);
-            this.GoToHelps.TabIndex = 3;
-            this.GoToHelps.Text = "HELPS";
-            this.GoToHelps.UseVisualStyleBackColor = false;
-            this.GoToHelps.Click += new System.EventHandler(this.GoToHelps_Click);
+            this.ExitGame.AutoSize = true;
+            this.ExitGame.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.ExitGame.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ExitGame.Font = new System.Drawing.Font("Cooper Black", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ExitGame.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.ExitGame.Location = new System.Drawing.Point(264, 355);
+            this.ExitGame.Name = "ExitGame";
+            this.ExitGame.Size = new System.Drawing.Size(132, 39);
+            this.ExitGame.TabIndex = 3;
+            this.ExitGame.Text = "QUIT";
+            this.ExitGame.UseVisualStyleBackColor = false;
+            this.ExitGame.Click += new System.EventHandler(this.ExitGame_Click);
             // 
             // MenuScreen
             // 
@@ -101,7 +101,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Tetris_Project.Properties.Resources.menuescreenbg2;
             this.ClientSize = new System.Drawing.Size(665, 521);
-            this.Controls.Add(this.GoToHelps);
+            this.Controls.Add(this.ExitGame);
             this.Controls.Add(this.GoToSettings);
             this.Controls.Add(this.GoToPlay);
             this.Controls.Add(this.Title);
@@ -118,7 +118,7 @@
         private System.Windows.Forms.Label Title;
         private System.Windows.Forms.Button GoToPlay;
         private System.Windows.Forms.Button GoToSettings;
-        private System.Windows.Forms.Button GoToHelps;
+        private System.Windows.Forms.Button ExitGame;
     }
 }
 

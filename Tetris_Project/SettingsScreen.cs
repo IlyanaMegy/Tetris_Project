@@ -16,5 +16,11 @@ namespace Tetris_Project
         {
             InitializeComponent();
         }
+
+        private void SettingsScreen_Load(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }

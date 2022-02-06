@@ -24,18 +24,16 @@ namespace Tetris_Project
             settingsWin.Show();
         }
 
-        private void GoToHelps_Click(object sender, EventArgs e)
-        {
-            HelpScreen helpWin = new HelpScreen();
-            this.Hide();
-            helpWin.Show();
-        }
-
         private void GoToPlay_Click(object sender, EventArgs e)
         {
             GameScreen gameWin = new GameScreen();
             this.Hide();
             gameWin.Show();
+        }
+
+        private void ExitGame_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
