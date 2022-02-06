@@ -37,6 +37,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.ExitButton = new System.Windows.Forms.Button();
+            this.StartGame = new System.Windows.Forms.Button();
+            this.ResetHighscore = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.TitleBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -139,12 +142,57 @@
             this.pictureBox2.TabIndex = 9;
             this.pictureBox2.TabStop = false;
             // 
+            // ExitButton
+            // 
+            this.ExitButton.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.ExitButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ExitButton.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ExitButton.ForeColor = System.Drawing.Color.Red;
+            this.ExitButton.Location = new System.Drawing.Point(60, 430);
+            this.ExitButton.Name = "ExitButton";
+            this.ExitButton.Size = new System.Drawing.Size(105, 31);
+            this.ExitButton.TabIndex = 10;
+            this.ExitButton.Text = "Go Back";
+            this.ExitButton.UseVisualStyleBackColor = false;
+            this.ExitButton.Click += new System.EventHandler(this.ExitButton_Click);
+            // 
+            // StartGame
+            // 
+            this.StartGame.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.StartGame.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.StartGame.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.StartGame.ForeColor = System.Drawing.Color.LimeGreen;
+            this.StartGame.Location = new System.Drawing.Point(408, 430);
+            this.StartGame.Name = "StartGame";
+            this.StartGame.Size = new System.Drawing.Size(105, 31);
+            this.StartGame.TabIndex = 11;
+            this.StartGame.Text = "Start Game";
+            this.StartGame.UseVisualStyleBackColor = false;
+            this.StartGame.Click += new System.EventHandler(this.StartGame_Click);
+            // 
+            // ResetHighscore
+            // 
+            this.ResetHighscore.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.ResetHighscore.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ResetHighscore.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ResetHighscore.ForeColor = System.Drawing.Color.DarkOrange;
+            this.ResetHighscore.Location = new System.Drawing.Point(207, 430);
+            this.ResetHighscore.Name = "ResetHighscore";
+            this.ResetHighscore.Size = new System.Drawing.Size(158, 31);
+            this.ResetHighscore.TabIndex = 12;
+            this.ResetHighscore.Text = "Reset Highscore";
+            this.ResetHighscore.UseVisualStyleBackColor = false;
+            this.ResetHighscore.Click += new System.EventHandler(this.ResetHighscore_Click);
+            // 
             // SettingsScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Tetris_Project.Properties.Resources.menuescreenbg1;
             this.ClientSize = new System.Drawing.Size(578, 501);
+            this.Controls.Add(this.ResetHighscore);
+            this.Controls.Add(this.StartGame);
+            this.Controls.Add(this.ExitButton);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
@@ -175,5 +223,8 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Button ExitButton;
+        private System.Windows.Forms.Button StartGame;
+        private System.Windows.Forms.Button ResetHighscore;
     }
 }

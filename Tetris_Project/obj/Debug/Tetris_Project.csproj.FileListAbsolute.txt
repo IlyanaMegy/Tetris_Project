@@ -10,3 +10,4 @@ C:\Users\ily\source\repos\Tetris_Project\Tetris_Project\obj\Debug\Tetris_Project
 C:\Users\ily\source\repos\Tetris_Project\Tetris_Project\obj\Debug\Tetris_Project.pdb
 C:\Users\ily\source\repos\Tetris_Project\Tetris_Project\obj\Debug\Tetris_Project.GameScreen.resources
 C:\Users\ily\source\repos\Tetris_Project\Tetris_Project\obj\Debug\Tetris_Project.MenuScreen.resources
+C:\Users\ily\source\repos\Tetris_Project\Tetris_Project\obj\Debug\Tetris_Project.SettingsScreen.resources

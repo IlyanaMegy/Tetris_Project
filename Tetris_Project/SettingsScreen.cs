@@ -22,5 +22,21 @@ namespace Tetris_Project
 
         }
 
+        private void ExitButton_Click(object sender, EventArgs e)
+        {
+            Application.Restart();
+        }
+
+        private void StartGame_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            GameScreen gameWin = new GameScreen();
+            gameWin.Show();
+        }
+
+        private void ResetHighscore_Click(object sender, EventArgs e)
+        {
+            Properties.Settings.Default.highscore = "0";
+        }
     }
 }
