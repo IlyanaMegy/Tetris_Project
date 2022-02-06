@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Drawing;
-using System.IO;
 using System.Windows.Forms;
 using Tetris;
 
@@ -196,10 +195,10 @@ namespace Tetris_Project
         private void checkIfGameOver()
         {
             if (currentY < 0)
-            {                
+            {
                 timer.Stop();
                 int a = Int32.Parse(Highscore_value.Text);
-                if(score>a)
+                if (score > a)
                 {
                     Highscore_value.Text = score.ToString();
                     Properties.Settings.Default.highscore = Highscore_value.Text;
@@ -207,7 +206,7 @@ namespace Tetris_Project
                 }
                 MessageBox.Show("Game Over");
                 this.Close();
-               
+
                 Application.Restart();
             }
         }
@@ -300,6 +299,11 @@ namespace Tetris_Project
         private void GameScreen_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void ExitGame_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

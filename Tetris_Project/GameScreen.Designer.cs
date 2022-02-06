@@ -36,6 +36,7 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.HighscoreTitle = new System.Windows.Forms.Label();
             this.Highscore_value = new System.Windows.Forms.Label();
+            this.ExitGame = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -128,12 +129,27 @@
             this.Highscore_value.Text = "0";
             this.Highscore_value.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // ExitGame
+            // 
+            this.ExitGame.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.ExitGame.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ExitGame.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ExitGame.ForeColor = System.Drawing.Color.Red;
+            this.ExitGame.Location = new System.Drawing.Point(331, 381);
+            this.ExitGame.Name = "ExitGame";
+            this.ExitGame.Size = new System.Drawing.Size(146, 31);
+            this.ExitGame.TabIndex = 11;
+            this.ExitGame.Text = "Exit Game";
+            this.ExitGame.UseVisualStyleBackColor = false;
+            this.ExitGame.Click += new System.EventHandler(this.ExitGame_Click);
+            // 
             // GameScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Tetris_Project.Properties.Resources.menuescreenbg1;
             this.ClientSize = new System.Drawing.Size(517, 424);
+            this.Controls.Add(this.ExitGame);
             this.Controls.Add(this.Highscore_value);
             this.Controls.Add(this.HighscoreTitle);
             this.Controls.Add(this.pictureBox2);
@@ -162,5 +178,6 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label HighscoreTitle;
         private System.Windows.Forms.Label Highscore_value;
+        private System.Windows.Forms.Button ExitGame;
     }
 }

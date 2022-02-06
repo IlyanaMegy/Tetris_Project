@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Tetris_Project
@@ -24,7 +17,7 @@ namespace Tetris_Project
 
         private void ExitButton_Click(object sender, EventArgs e)
         {
-            Application.Restart();
+            Application.Exit();
         }
 
         private void StartGame_Click(object sender, EventArgs e)
