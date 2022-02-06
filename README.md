@@ -44,6 +44,7 @@ Le bouton ``Exit Game`` interrompt le programme.
 
 ## Page des options et instructions
 ![rules-and-settings](https://cdn.discordapp.com/attachments/889061317321838627/939927848397975562/settings.png)
+
 Cette page est une page simplement constituée des règles du jeu et de trois boutons;
 Un premier bouton ``Go Back`` permet à l'utilisateur de retourner au menu principal, pour cela le programme va simplement fermer la page actuelle et afficher le menu qui avait été caché (``hidden``).
 
@@ -55,6 +56,7 @@ Et enfin ``Start Game`` qui redirige vers l'interface du jeu.
 (magnifique transition)
 
 ![game](https://cdn.discordapp.com/attachments/889061317321838627/939914805815418900/game.png)
+
 La page du jeu est le deuxième Form que nous avons codé.
 Elle se compose d'un espace à gauche où l'utilisateur joue et à droite on a des statistiques de jeu avec:
 - le ``Highscore`` qui est par défaut établi à 0, si le joueur bat le record, la valeur s'adapte. Pour ajouter cette fonctionnalité on créé une nouvelle propriété dans les options du projet, puis lors d'un ``Game Over`` nous mettons à jour la valeur du record si l'utilisateur l'a battu. (voir ci-dessous pour mieux comprendre)
@@ -80,9 +82,11 @@ Le jeu démarre dès lors que le joueur accède à l'interface du jeu.
 Son score et son niveau sont donc initialisés à 0, le joueur peut voir le prochain objet qui va arriver dans la boîte du ``Next``, le chrono (``timer``) démarre et le premier objet commence sa descente.
 
 ![move](https://cdn.discordapp.com/attachments/889061317321838627/939923793483276328/move.png)
+
 Le joueur à la possibilité de bouger l'objet vers la gauche ou la droite en utilisant les touches ``Left`` et ``Right`` du clavier, il peut également accélérer la chute de l'objet avec la touche ``Down`` du clavier et enfin il peut faire tourner l'objet à 90° avec la touche ``Up`` si il en a la possibilité.
 
 ![newshape](https://cdn.discordapp.com/attachments/889061317321838627/939925421061980190/newshape.png)
+
 Une fois que l'objet atteint le sol ou s'il se pose sur un autre objet, le joueur n'a plus la possibilité de le bouger et un nouvel objet apparaît en haut (l'objet prédit dans la boîte du ``Next`` précédemment.).
 Le ``Next`` affiche un nouvel objet pour le prochain coup ect...
 
