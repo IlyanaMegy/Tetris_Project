@@ -57,7 +57,7 @@ Et enfin ``Start Game`` qui redirige vers l'interface du jeu.
 ![game](https://cdn.discordapp.com/attachments/889061317321838627/939914805815418900/game.png)
 La page du jeu est le deuxième Form que nous avons codé.
 Elle se compose d'un espace à gauche où l'utilisateur joue et à droite on a des statistiques de jeu avec:
-- le ``Highscore`` qui est par défaut établi à 0, si le joueur bat le record, la valeur s'adapte. Pour ajouter cette fonctionnalité on créé une nouvelle propriété dans les options du projet, puis lors d'un ``Game Over`` ou lorsque l'utilisateur interrompt le programme nous mettons à jour la valeur du record si l'utilisateur l'a battu. (voir ci-dessous pour mieux comprendre)
+- le ``Highscore`` qui est par défaut établi à 0, si le joueur bat le record, la valeur s'adapte. Pour ajouter cette fonctionnalité on créé une nouvelle propriété dans les options du projet, puis lors d'un ``Game Over`` nous mettons à jour la valeur du record si l'utilisateur l'a battu. (voir ci-dessous pour mieux comprendre)
 
 ![properties](https://cdn.discordapp.com/attachments/889061317321838627/939917026896519248/properties.png)
 ![highscore](https://cdn.discordapp.com/attachments/889061317321838627/939917498902511636/highscore.png)
