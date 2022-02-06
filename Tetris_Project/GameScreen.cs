@@ -206,7 +206,6 @@ namespace Tetris_Project
                 }
                 MessageBox.Show("Game Over");
                 this.Close();
-
                 Application.Restart();
             }
         }
@@ -276,7 +275,7 @@ namespace Tetris_Project
 
             nextShapeGraphics.FillRectangle(Brushes.Black, 0, 0, nextShapeBitmap.Width, nextShapeBitmap.Height);
 
-            // Find the ideal position for the shape in the side panel
+            // Position
             var startX = (6 - shape.Width) / 2;
             var startY = (6 - shape.Height) / 2;
 
