@@ -34,10 +34,12 @@ Nous allons donc détailler le contenu de chaque page ainsi qu'expliquer les mé
 ## Menu principal
 
 ![menu](https://cdn.discordapp.com/attachments/889061317321838627/939911707315298304/menu.png)
+
 Le menu principal est le premier Form de Windows Forms que nous avons codé. Nous avons opté pour un design un peu rétro pour l’esthétique du jeu.
 C'est une simple page contenant un Label pour le titre et trois boutons qui redirigent chacune sur la page correspondant.
 
 ![menu-code](https://cdn.discordapp.com/attachments/889061317321838627/939913508026449970/menucode.png)
+
 Pour les boutons qui permettent d'accéder à l'interface du jeu et pour accéder aux options sont développé de tel que l'utilisateur est redirigé et la page du menu est cachée.
 
 Le bouton ``Exit Game`` interrompt le programme.
