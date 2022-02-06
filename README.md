@@ -90,6 +90,7 @@ Si le joueur arrive à remplir tous les espaces d'une ligne, alors celle-ci se d
 
 Le programme vérifie une fois l'objet posé que le joueur n'est pas ``Game Over``.
 ![check](https://cdn.discordapp.com/attachments/889061317321838627/939926522201006120/check.png)
+
 Si un objet posé dépasse le haut de l'interface, alors le joueur a perdu.
 Le joueur est alors redirigé vers la page du menu principal.
 
