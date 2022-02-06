@@ -1,5 +1,5 @@
-C:\Users\ily\source\repos\Tetris_Project\Tetris_Project\bin\Debug\Tetris_Project.exe
 C:\Users\ily\source\repos\Tetris_Project\Tetris_Project\bin\Debug\Tetris_Project.exe.config
+C:\Users\ily\source\repos\Tetris_Project\Tetris_Project\bin\Debug\Tetris_Project.exe
 C:\Users\ily\source\repos\Tetris_Project\Tetris_Project\bin\Debug\Tetris_Project.pdb
 C:\Users\ily\source\repos\Tetris_Project\Tetris_Project\obj\Debug\Tetris_Project.csproj.AssemblyReference.cache
 C:\Users\ily\source\repos\Tetris_Project\Tetris_Project\obj\Debug\Tetris_Project.csproj.SuggestedBindingRedirects.cache

@@ -299,10 +299,5 @@ namespace Tetris_Project
         {
 
         }
-
-        private void ExitGame_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
     }
 }
