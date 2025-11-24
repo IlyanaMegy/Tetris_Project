@@ -9,10 +9,11 @@ namespace Tetris_Project
     {
         Shape currentShape;
         Shape nextShape;
-        Timer timer = new Timer();
+        System.Windows.Forms.Timer timer = new System.Windows.Forms.Timer();
         public GameScreen()
         {
             InitializeComponent();
+            this.Text = "Tetris Game";
             loadCanvas();
             currentShape = getRandomShapeWithCenterAligned();
             nextShape = getNextShape();
@@ -184,12 +185,15 @@ namespace Tetris_Project
                 {
                     if (currentShape.Dots[j, i] == 1)
                     {
-                        checkIfGameOver();
-
-                        canvasDotArray[currentX + i, currentY + j] = 1;
+                        if (currentX + i >= 0 && currentX + i < canvasDotArray.GetLength(0) &&
+                            currentY + j >= 0 && currentY + j < canvasDotArray.GetLength(1))
+                        {
+                            canvasDotArray[currentX + i, currentY + j] = 1;
+                        }
                     }
                 }
             }
+            checkIfGameOver();
         }
 
         private void checkIfGameOver()

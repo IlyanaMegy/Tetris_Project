@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
+using System.Drawing;
 
 namespace Tetris_Project
 {
@@ -8,6 +9,19 @@ namespace Tetris_Project
         public MenuScreen()
         {
             InitializeComponent();
+
+            Title.TextAlign = ContentAlignment.MiddleCenter;
+            Title.Anchor = AnchorStyles.Top;
+
+            CenterButtons();
+            this.Text = "Tetris Game - Home";
+        }
+
+        private void CenterButtons()
+        {
+            GoToPlay.Location = new Point((this.ClientSize.Width - GoToPlay.Width) / 2, GoToPlay.Location.Y);
+            GoToSettings.Location = new Point((this.ClientSize.Width - GoToSettings.Width) / 2, GoToSettings.Location.Y);
+            ExitGame.Location = new Point((this.ClientSize.Width - ExitGame.Width) / 2, ExitGame.Location.Y);
         }
 
         private void GoToSettings_Click(object sender, EventArgs e)

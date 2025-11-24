@@ -8,11 +8,28 @@ namespace Tetris_Project
         public SettingsScreen()
         {
             InitializeComponent();
+            this.Text = "Tetris Game - Settings";
         }
 
         private void SettingsScreen_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void GoBack_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            foreach (Form form in Application.OpenForms)
+            {
+                if (form is MenuScreen)
+                {
+                    form.Show();
+                    form.BringToFront();
+                    return;
+                }
+            }
+            MenuScreen menuWin = new MenuScreen();
+            menuWin.Show();
         }
 
         private void ExitButton_Click(object sender, EventArgs e)

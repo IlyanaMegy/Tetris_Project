@@ -154,7 +154,7 @@
             this.ExitButton.TabIndex = 10;
             this.ExitButton.Text = "Go Back";
             this.ExitButton.UseVisualStyleBackColor = false;
-            this.ExitButton.Click += new System.EventHandler(this.ExitButton_Click);
+            this.ExitButton.Click += new System.EventHandler(this.GoBack_Click);
             // 
             // StartGame
             // 

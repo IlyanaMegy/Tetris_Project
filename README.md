@@ -1,25 +1,29 @@
-﻿# Tetris Project
-
-     ████████╗███████╗████████╗██████╗ ██╗███████╗    ██████╗ ██████╗  ██████╗      ██╗███████╗ ██████╗████████╗
+﻿     ████████╗███████╗████████╗██████╗ ██╗███████╗    ██████╗ ██████╗  ██████╗      ██╗███████╗ ██████╗████████╗
      ╚══██╔══╝██╔════╝╚══██╔══╝██╔══██╗██║██╔════╝    ██╔══██╗██╔══██╗██╔═══██╗     ██║██╔════╝██╔════╝╚══██╔══╝
         ██║   █████╗     ██║   ██████╔╝██║███████╗    ██████╔╝██████╔╝██║   ██║     ██║█████╗  ██║        ██║   
         ██║   ██╔══╝     ██║   ██╔══██╗██║╚════██║    ██╔═══╝ ██╔══██╗██║   ██║██   ██║██╔══╝  ██║        ██║   
         ██║   ███████╗   ██║   ██║  ██║██║███████║    ██║     ██║  ██║╚██████╔╝╚█████╔╝███████╗╚██████╗   ██║   
         ╚═╝   ╚══════╝   ╚═╝   ╚═╝  ╚═╝╚═╝╚══════╝    ╚═╝     ╚═╝  ╚═╝ ╚═════╝  ╚════╝ ╚══════╝ ╚═════╝   ╚═╝   
 
-**Début du projet**: Lundi 10 janvier
-
-**Fin du projet**: Dimanche 6 février - 23h59
-
 **Groupe :** IRALOUR Claire, BERTIN Pierre-Louis, MEGY Ilyana.
 
+<div align="center">
+  <img src="srcs/screens/menu.png" alt="Home Page Preview" style="max-width: 80%; border: 1px solid #ddd; border-radius: 8px; margin: 10px 0;" />
+  <img src="srcs/screens/game.png" alt="Game Page Preview" style="max-width: 80%; border: 1px solid #ddd; border-radius: 8px; margin: 10px 0;" />
+  <img src="srcs/screens/settings.png" alt="Settings Page Preview" style="max-width: 80%; border: 1px solid #ddd; border-radius: 8px; margin: 10px 0 20px;" />
+</div>
+
+<div align="center">
+  <img src="srcs/csharp.svg" alt="CSharp" title="CSharp 8+" width="60" style="margin: 10px;"/>
+  <img src="srcs/dot_8.svg" alt=".NET" title=".NET 8 5.4" width="60" style="margin: 10px;"/>
+  <img src="srcs/Visual_Studio.svg" alt="Visual Studio  " title="Visual Studio 2022" width="60" style="margin: 10px;"/>
+</div>
 
 # Sommaire
 0. [Tetris](#tetris)
 1. [Menu principal](#menu-principal)
 2. [Page des options et instructions](#page-des-options-et-instructions)
 3. [Interface du jeu](#interface-du-jeu)
-
 
 
 ## Tetris
