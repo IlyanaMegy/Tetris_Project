@@ -45,7 +45,6 @@ Pour les boutons qui permettent d'accéder à l'interface du jeu et pour accéde
 Le bouton ``Exit Game`` interrompt le programme.
 
 ## Page des options et instructions
-![rules-and-settings](https://cdn.discordapp.com/attachments/889061317321838627/939927848397975562/settings.png)
 
 Cette page est une page simplement constituée des règles du jeu et de trois boutons;
 Un premier bouton ``Go Back`` permet à l'utilisateur de retourner au menu principal, pour cela le programme va simplement fermer la page actuelle et afficher le menu qui avait été caché (``hidden``).
