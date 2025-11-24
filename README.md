@@ -13,7 +13,7 @@
   <img src="srcs/screens/settings.png" alt="Settings Page Preview" style="max-width: 80%; border: 1px solid #ddd; border-radius: 8px; margin: 10px 0 20px;" />
 </div>
 
-<div align="center">
+<div align="center" style="margin-top: 20px;">
   <img src="srcs/csharp.svg" alt="CSharp" title="CSharp 8+" width="60" style="margin: 10px;"/>
   <img src="srcs/dot_8.svg" alt=".NET" title=".NET 8 5.4" width="60" style="margin: 10px;"/>
   <img src="srcs/Visual_Studio.svg" alt="Visual Studio  " title="Visual Studio 2022" width="60" style="margin: 10px;"/>
